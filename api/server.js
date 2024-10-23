@@ -1,8 +1,10 @@
 // Importar el módulo express
 const express = require("express");
+const cors = require("cors");
 
 // Crear una instancia de la aplicación Express
 const app = express();
+app.use(cors());
 
 // Definir una ruta que maneje las solicitudes a la raíz
 app.get("/", (req, res) => {
